@@ -13,7 +13,9 @@ export default {
     let hold;
     const divSwitchPlace = (replaced, origin) => {
       document.getElementById(origin).textContent = document.getElementById(replaced).textContent;
+      document.getElementById(origin).style = 'background-color:#e25e5e';
       document.getElementById(replaced).textContent = hold;
+      document.getElementById(replaced).style = 'background-color:white';
     };
     const dragStart = (event) => {
       hold = document.getElementById(event.toElement.id).textContent;
@@ -32,6 +34,7 @@ export default {
     };
     const dragDrop = (event) => {
       console.log(`降落: ${event.toElement.id}`);
+      document.getElementById(event.toElement.id).style = 'background-color:#e25e5e';
     };
     const eventArr = [1, 2, 3, 4, 5, 6];
     onMounted(() => {
@@ -59,7 +62,7 @@ export default {
 <style lang="scss">
 .main{
   width: 800px;
-  height: 800px;
+  height: 500px;
   background-color: pink;
   display: flex;
   flex-direction: column;
