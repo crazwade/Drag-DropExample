@@ -1,15 +1,21 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <HelloWorld msg="Welcome to My Vue.js App"/>
+  <DragandDrop />
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue';
+import DragandDrop from './components/DragandDrop.vue';
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
+    DragandDrop,
+  },
+  setup() {
+    return {
+    };
   },
 };
 </script>
@@ -22,5 +28,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 </style>
