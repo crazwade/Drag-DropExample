@@ -31,10 +31,10 @@ export default {
     };
     const dragEnd = () => {
       console.log('----------end----------');
+      document.getElementById(divBeingReplaced).style = 'background-color:#e25e5e';
     };
     const dragDrop = (event) => {
       console.log(`降落: ${event.toElement.id}`);
-      document.getElementById(event.toElement.id).style = 'background-color:#e25e5e';
     };
     const eventArr = [1, 2, 3, 4, 5, 6];
     onMounted(() => {
