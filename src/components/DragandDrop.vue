@@ -61,7 +61,7 @@ export default {
 
 <style lang="scss">
 .main{
-  width: 800px;
+  width: 80%;
   height: 500px;
   background-color: pink;
   display: flex;
@@ -70,7 +70,7 @@ export default {
   justify-content: space-evenly;
 }
 .moveBlock{
-  width: 700px;
+  width: 80%;
   height: 50px;
   background-color: rgb(226, 94, 94);
   font-size: 44px;
